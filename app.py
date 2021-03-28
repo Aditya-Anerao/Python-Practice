@@ -1,23 +1,23 @@
+#string variable and print statement
 first_name = "Aditya"
 last_name = "Anerao"
 full_name = first_name + " " + last_name
 print(full_name)
 
+#input function
 name = input("What is your name? ")
 print("Hello", name)
 
-
+#integer variable type conversion
 birth_year = input("Enter your birth year: ")
 age = 2021 - int(birth_year)
 print("Age = ", age)
-
 
 """ Value Type Conversions
 str() --> string
 int() --> integer ex: 10
 float() --> decimal ex: 10.1
 bool() --> boolean
-
 """
 
 #Calculator Program
@@ -26,9 +26,11 @@ V2 = float(input("Value 2: "))
 Sum = float(V1) + V2
 print("Sum: ", Sum)
 
+#methods
 course = 'Python for Beginners'
 print(course.upper())
 
+#if statements
 Temp = float(input("What is the temparature? "))
 if Temp > 80:
     print("It's a hot today")
@@ -37,7 +39,6 @@ elif Temp > 60: #(20, 30]
     print("It's a nice day")
 else:
     print("It is cold")
-
 
 #Weight Converter
 Raw_data = float(input("Weight: "))
@@ -51,6 +52,7 @@ elif Units.upper() == "L":
 else:
     print("Invalid Units Entered")
 
+#while loop
 i = 1
 while i<=3:
     print (i * " *")
@@ -59,24 +61,25 @@ while i>= 1:
     print (i * ' *')
     i -= 1
 
+#lists and for loop
 friends = ['DK','Sanjeev', 'Meepy', 'Shanny', 'Mohit', "Abhi"]
 friends.insert(3,"Adi")
 if "Abhi" in friends:
     friends.remove("Abhi")
 print ("I have ", len(friends)-1, " friends!")
-#for loop version
+    #for loop version
 for homie in friends:
     print(homie)
 i=0
-#while loop version
+    #while loop version
 while i < len(friends):
     print(friends[i])
     i+=1
 
 print("Friend List = ", friends[0:6])
-#lists --> [inclusive:exclusive)
+    #lists --> [inclusive:exclusive)
 
-
+#range
 numbers = range(1,11,2) #lists --> [inclusive lowerBound, exclusive upperBound, step)
 for number in numbers:
     print(number)
