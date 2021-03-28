@@ -1,0 +1,4 @@
+cd = change directory
+cd .. = go up one directory
+
+cls = clear screen
